@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon.png">
+
+    <title>Intro to HTML</title>
+</head>
+
+<body>
+    <!-- This is a comment -->
+
+    <!-- Headings range from h1 to h6 -->
+    <h1>hello</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+
+    <!-- Paragraph tags -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis hic sed tempore voluptates labore, perspiciatis vero, est fugit, ex asperiores earum magnam voluptatem eaque tenetur illo! At magnam quis et.</p>
+
+    <!-- Inline tags do not change the layout -->
+    <p>Lorem <b>ipsum dolor</b> sit amet consectetur, <i>adipisicing elit</i>. Quis hic sed <strong>tempore</strong> voluptates labore, perspiciatis vero, est fugit, ex asperiores earum magnam voluptatem eaque tenetur illo! At magnam quis et.</p>
+
+    <!-- Lists -->
+     <!-- unordered lists are bullet points -->
+    <ul>
+        <li>This is a bullet point</li>
+        <li>This is a bullet point</li>
+        <li>This is a bullet point</li>
+    </ul>
+
+    <!-- ordered lists are numeric -->
+    <ol>
+        <li>This is a numbered list</li>
+        <li>This is the second item</li>
+        <li>This is the third item</li>
+    </ol>
+
+    <!-- Hyperlinks are set up with anchor tags - <a> -->
+    <!-- They take an href, which is the destination page. They can also have target="_blank" which opens the link in a new tab -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto fugit voluptatum voluptatem, ab quaerat harum magni tenetur <a href="https://en.wikipedia.org/wiki/Bear">nesciunt</a> laudantium minus delectus <a href="https://en.wikipedia.org/wiki/Bear" target="_blank">velit obcaecati</a> quam animi tempora rem, odio consequatur!</p>
+
+    <!-- Images -->
+    <!-- If the image can't be loaded, it will display alt text -->
+    <img src="" alt="A lovely house">
+
+    <!-- br tags are line breaks and they push inline elements onto a new line -->
+    <br>
+
+    <!-- An image with a valid source attribute -->
+    <img src="images/house.png" alt="A lovely house">
+
+
+    <!-- Some other elements you might occasionally see -->
+    <pre>This is used for code snippets mainly.</pre>
+
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum reprehenderit vitae, consequatur in deleniti. Molestiae quia tempore reprehenderit mollitia quos animi itaque! Voluptate quo voluptates dolor vel delectus ab.</blockquote>
+
+    <div style="background-color: lightcyan; padding: 30px;">
+        <h2>Article title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cupiditate ad, veniam laborum provident...</p>
+        <p><a href="">Read More</a></p>
+    </div>
+
+    <div>
+        <h2>Article title</h2>
+        <p><span style="background-color: yellow;">Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. <div>Asperiores</div> cupiditate ad, veniam laborum provident...</p>
+        <p><a href="">Read More</a></p>
+    </div>
+
+    <div>
+        <h2>Article title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cupiditate ad, veniam laborum provident...</p>
+        <p><a href="">Read More</a></p>
+    </div>
+
+    <form action="">
+        <label for="usernameField">Username:</label>
+        <input id="usernameField" name="username" type="text" required>
+        
+        <br>
+        <label for="passwordField">Password:</label>
+        <input id="passwordField" name="password" type="password" required>
+
+        <br>
+        <label for="ageField">Age:</label>
+        <input id="ageField" name="age" type="number">
+        
+        <br>
+        <label for="birthdayField">Birthday:</label>
+        <input id="birthdayField" name="birthday" type="date">
+        
+        <br>
+        <label for="petsField">Do you have pets:</label>
+        <input id="PetsField" name="Pets" type="checkbox">
+
+        <br>
+        <h3>What is your hair colour?</h3>
+        <input id="hairBrownField" name="hair" type="radio" value="Brown">
+        <label for="hairBrownField">Brown</label>
+
+        <input id="hairBlackField" name="hair" type="radio" value="Black">
+        <label for="hairBlackField">Black</label>
+
+        <input id="hairBlondeField" name="hair" type="radio" value="Blonde">
+        <label for="hairBlondeField">Blonde</label>
+
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
